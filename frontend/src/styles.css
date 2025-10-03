@@ -1,0 +1,133 @@
+/* frontend/src/styles.css */
+:root {
+  --primary-color: #2c3e50; /* Dark blue for navbar */
+  --secondary-color: #3498db; /* Blue for buttons and accents */
+  --background-color: #f8f9fa; /* Light gray background */
+  --text-color: #333; /* Dark text */
+  --alert-success: #28a745; /* Green for success alerts */
+  --alert-danger: #dc3545; /* Red for error alerts */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Tables */
+.table {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Alerts */
+.alert-success {
+  background-color: var(--alert-success);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: var(--alert-danger);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}
